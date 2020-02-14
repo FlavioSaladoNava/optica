@@ -60,7 +60,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="CatalogoArmazon.html">Pedidos</a>
+                        <a class="collapse-item" href="PedidosArmazon.html">Pedidos</a>
                         <a class="collapse-item active" href="cards.html">Catalogo</a>
                     </div>
                 </div>
@@ -68,9 +68,9 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="CatalogoArmazon.html">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Catalogo de armazones</span></a>
+                    <span>Catalogo de Micas</span></a>
             </li>
 
             <!-- Divider -->
@@ -78,9 +78,14 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item active">
-                <a class="nav-link" href="IndexAdministrador.html">
+                <a class="nav-link" href="RegistroDoctor.html">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Registrar doctor</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Doctores.html">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>Doctores</span></a>
             </li>
 
             <!-- Divider -->
@@ -172,47 +177,76 @@
                             </ul>
 
                         </nav>
+                        <!-- End of Topbar -->
 
                         <!-- Begin Page Content -->
                         <div class="container-fluid">
 
                             <!-- Page Heading -->
-                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <h1 class="h3 mb-0 text-gray-800">Catalogo Armazon</h1>
-                            </div>
 
 
-                            <div class="row">
-                                <!-- Collapsable Card Example -->
-
-                                <div class="col-lg-6">
-
-                                    <!-- Default Card Example -->
-                                    <div class="card mb-4">
-                                        <div class="card-header">
-                                            Default Card Example
-                                        </div>
-                                        <div class="card-body">
-                                            This card uses Bootstrap's default styling with no utility classes added. Global styles are the only things modifying the look and feel of this default card example.
+                            <form class="card-header py-3">
+                                <div class="form-row ">
+                                    <div class="col-md-10 mb-3">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Marca</label>
+                                            <select class="form-control form-control-user" id="exampleFormControlSelect1">
+                                            <option>Ray ban</option>
+                                            <option>Ray ban verdes</option>
+                                            <option>Ray ban rojos</option>
+                                            <option>Ray ban azul</option>
+                                            <option>Ray ban negros</option>
+                                          </select>
                                         </div>
                                     </div>
-
-                                    <!-- Basic Card Example -->
-                                    <div class="card shadow mb-4">
-                                        <div class="card-header py-3">
-                                            <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
-                                        </div>
-                                        <div class="card-body">
-                                            The styling for this basic card example is created by using default Bootstrap utility classes. By using utility classes, the style of the card component can be easily modified with no need for any custom CSS!
-                                        </div>
-                                    </div>
-
                                 </div>
-                            </div>
+                                <div class="form-row">
+                                    <div class="col-md-10 mb-3">
+                                        <label for="validationTextarea">Descripcion</label>
+                                        <textarea class="form-control form-control-user" id="validationTextarea" placeholder="" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Descripcion.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Cantidad">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-2 mb-12">
+                                        <a href="IndexAdministrador.html" class="btn btn-primary btn-user btn-block">
+                                        Aceptar
+                                      </a>
+                                    </div>
+                                    <div class="col-md-2 mb-12">
+                                        <a href="IndexAdministrador.html" class="btn btn-primary btn-user btn-block">
+                                        Cancelar
+                                      </a>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Footer -->
+                            <footer class="sticky-footer bg-white">
+                                <div class="container my-auto">
+                                    <div class="copyright text-center my-auto">
+                                        <span>Optica &copy;  2019</span>
+                                    </div>
+                                </div>
+                            </footer>
+                            <!-- End of Footer -->
+
                         </div>
+                        <!-- End of Content Wrapper -->
 
                     </div>
-                    <!-- /.container-fluid -->
+                    <!-- End of Page Wrapper -->
+
+                    <!-- Scroll to Top Button-->
                     <a class="scroll-to-top rounded" href="#page-top">
                         <i class="fas fa-angle-up"></i>
                     </a>
