@@ -60,7 +60,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="CatalogoArmazon.html">Pedidos</a>
+                        <a class="collapse-item" href="PedidosArmazon.html">Pedidos</a>
                         <a class="collapse-item active" href="cards.html">Catalogo</a>
                     </div>
                 </div>
@@ -68,9 +68,9 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="CatalogoArmazon.html">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Catalogo de armazones</span></a>
+                    <span>Catalogo de Micas</span></a>
             </li>
 
             <!-- Divider -->
@@ -78,9 +78,14 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item active">
-                <a class="nav-link" href="IndexAdministrador.html">
+                <a class="nav-link" href="RegistroDoctor.html">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Registrar doctor</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Doctores.html">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>Doctores</span></a>
             </li>
 
             <!-- Divider -->
@@ -172,150 +177,76 @@
                             </ul>
 
                         </nav>
+                        <!-- End of Topbar -->
 
                         <!-- Begin Page Content -->
                         <div class="container-fluid">
 
                             <!-- Page Heading -->
-                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <h1 class="h3 mb-0 text-gray-800">Catalogo Armazon</h1>
-                            </div>
 
 
-                            <div class="row">
-                                <!-- Collapsable Card Example -->
-                                <div class="col-lg">
-                                    <!-- Default Card Example -->
-                                    <div class="card mb-4">
-                                        <img class="card-img-top" src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/8056597124133.jpg"  height="250" width="150">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center " >Armazón Ray-Ban Vista en Metal Plata</h5>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="card-text">$2359</p>
-                                                    </div>
-                                                    <div class="col">
-                                                        <p class="card-text">Stock: 5</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="btn btn-primary " href="#" role="button" >Pedido</a>
-                                        </div>
-                                    </div>
-                                </div>                             
-                                <div class="col-lg">
-                                    <!-- Default Card Example -->
-                                    <div class="card mb-4">
-                                        <img class="card-img-top" src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/8056597124430.jpg"  height="250" width="150">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Armazón Ray-Ban Vista Oro en Metal</h5>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="card-text">$2400</p>
-                                                    </div>
-                                                    <div class="col">
-                                                        <p class="card-text">Stock: 3</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="btn btn-primary " href="#" role="button" >Pedido</a>
+                            <form class="card-header py-3">
+                                <div class="form-row ">
+                                    <div class="col-md-10 mb-3">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Marca</label>
+                                            <select class="form-control form-control-user" id="exampleFormControlSelect1">
+                                            <option>Ray ban</option>
+                                            <option>Ray ban verdes</option>
+                                            <option>Ray ban rojos</option>
+                                            <option>Ray ban azul</option>
+                                            <option>Ray ban negros</option>
+                                          </select>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-lg">
-                                    <!-- Default Card Example -->
-                                    <div class="card mb-4">
-                                        <img class="card-img-top" src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/8056597123334.jpg"  height="250" width="150">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Armazón Ray-Ban en Acero Negro</h5>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="card-text">$2700</p>
-                                                    </div>
-                                                    <div class="col">
-                                                        <p class="card-text">Stock: 5</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="btn btn-primary " href="#" role="button" >Pedido</a>
+                                <div class="form-row">
+                                    <div class="col-md-10 mb-3">
+                                        <label for="validationTextarea">Descripcion</label>
+                                        <textarea class="form-control form-control-user" id="validationTextarea" placeholder="" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Descripcion.
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="row">
-                                <!-- Collapsable Card Example -->
-                                <div class="col-lg">
-                                    <!-- Default Card Example -->
-                                    <div class="card mb-4">
-                                        <img class="card-img-top" src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/8056597062589.jpg"  height="250" width="150">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Armazón Vogue en Nylon Habana-Transparente-Oro</h5>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="card-text">$1600</p>
-                                                    </div>
-                                                    <div class="col">
-                                                        <p class="card-text">Stock: 3</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="btn btn-primary " href="#" role="button" >Pedido</a>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Cantidad">
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-lg">
-                                    <!-- Default Card Example -->
-                                    <div class="card mb-4">
-                                        <img class="card-img-top" src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/8056597063043.jpg"  height="250" width="150">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center " class="m-0 font-weight-bold text-primary">Armazón Vogue en Nylon Violeta-Café</h5>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="card-text">$1500</p>
-                                                    </div>
-                                                    <div class="col">
-                                                        <p class="card-text">Stock: 4</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="btn btn-primary " href="#" role="button" >Pedido</a>
-                                        </div>
+                                <div class="form-row">
+                                    <div class="col-md-2 mb-12">
+                                        <a href="IndexAdministrador.html" class="btn btn-primary btn-user btn-block">
+                                        Aceptar
+                                      </a>
+                                    </div>
+                                    <div class="col-md-2 mb-12">
+                                        <a href="IndexAdministrador.html" class="btn btn-primary btn-user btn-block">
+                                        Cancelar
+                                      </a>
                                     </div>
                                 </div>
+                            </form>
 
-                                <div class="col-lg">
-                                    <!-- Default Card Example -->
-                                    <div class="card mb-4">
-                                        <img class="card-img-top" src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/8053672915198.jpg"  height="250" width="150">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Armazón Vogue en metal oro rosa-vino</h5>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="card-text">$1470</p>
-                                                    </div>
-                                                    <div class="col">
-                                                        <p class="card-text">Stock: 6</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a class="btn btn-primary " href="#" role="button" >Pedido</a>
-                                        </div>
+                            <!-- Footer -->
+                            <footer class="sticky-footer bg-white">
+                                <div class="container my-auto">
+                                    <div class="copyright text-center my-auto">
+                                        <span>Optica &copy;  2019</span>
                                     </div>
                                 </div>
-                            </div>
+                            </footer>
+                            <!-- End of Footer -->
+
                         </div>
+                        <!-- End of Content Wrapper -->
 
                     </div>
-                    <!-- /.container-fluid -->
+                    <!-- End of Page Wrapper -->
+
+                    <!-- Scroll to Top Button-->
                     <a class="scroll-to-top rounded" href="#page-top">
                         <i class="fas fa-angle-up"></i>
                     </a>
