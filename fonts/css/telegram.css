@@ -1,0 +1,90 @@
+body
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    background: rgb(231, 235, 240) none repeat scroll 0% 0%;
+}
+* /* Everythig */
+{
+    font-family: sans-serif;
+}
+/* .capa__base{} */
+.capa_background_up
+{
+    background: #5682a3;
+    width: 100%;
+    height: 226px;
+}
+.login
+{
+    margin: -131px auto 90px;
+    max-width: 404px;
+}
+.login__head
+{
+    height: 75px;
+}
+.login_head_title
+{
+    display: inline-block;
+    line-height: 30px;
+    padding: 23px 15px 22px;
+}
+.login_head_title i
+{
+    font-size: 1.8em;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 18px;
+    color: #fff;
+}
+.login_head_title h1
+{
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 3px;
+    color: #fff;
+}
+.login__body
+{
+    background: #fff;
+    padding: 44px 65px;
+    box-shadow: 0 1px 1px rgba(97,127,152,.2),1px 0 0 rgba(97,127,152,.1),-1px 0 0 rgba(97,127,152,.1);
+    border-radius: 2px;
+    border: 0;
+    margin: 0;
+    max-width: none;
+}
+.login__buttom
+{
+    background-color: white;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    width: 100%;
+    color: #5682a3;
+    text-align: center;
+    border: 2px solid #5682a3;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.login__buttom:hover
+{
+    background-color: #5682a3;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    width: 100%;
+    color: white;
+}
+.login__foot
+{
+    color: #84a2bc;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 25px;
+    text-align: center;
+}

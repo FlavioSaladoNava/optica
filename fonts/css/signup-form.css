@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+.haloBody{
+	background-image: url("../media/beach-clouds.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.signup-form-container {
+	
+	border-radius:3px;
+	background:#fff;
+	border-top:3px solid #007bff;
+	margin:4% auto;
+	max-width:500px;
+	border-top-color:#00c0ef;
+	box-shadow:0 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.avatar{
+	width: 100px;
+	height: 110px;
+	border-radius: 10%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+  }
+
+.form-header{
+	
+	color:#444;
+	display:block;
+	padding:20px;
+	position:relative;
+	border-bottom:1px solid #f4f4f4;
+}
+
+.form-header .form-title {
+	display:inline-block;
+	font-size:18px;
+	margin:0;
+	line-height:1
+}
+
+.form-body {
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
+	padding:20px;
+}
+
+.form-footer {
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
+	border-top:1px solid #f4f4f4;
+	padding:20px;
+	background-color:#202225;
+	
+}
+
+.form-control{
+	
+	font-size: 16px;
+    height: auto;
+    padding: 7px 9px;
+}
+.form-group #error{
+	color:#a94442;
+}
+
+input[type="button"]{
+	border-color: #202225;
+	box-shadow: #f0f0f0;
+	text-decoration: none;
+	height: 30px;
+	width: 100px;
+	margin-top: 10px;
+	background-color: #202225;
+	color:white;
+}
+
+
+
+button{
+    height: 40px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  div a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+	color:darkgray;
+	width: 100%;
+	margin-top: 5px;
+
+  }
+
+  div a:hover{
+    color: #057ec8;
+    text-decoration: none;
+	}
