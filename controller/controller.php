@@ -75,6 +75,10 @@ include_once ('./models/model.php'); //manda a traer el archivo de modelo
             }
         }
 
+        
+
+
+        
 
         public function authenticated(){ //metodo que autentifica si se ha iniciado sesion
             if(isset($_SESSION['id'])){
@@ -104,11 +108,7 @@ include_once ('./models/model.php'); //manda a traer el archivo de modelo
 
                     if(isset($user)){
                 
-                    echo ' <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false" style="color: #fff;">
-                    <i id="user-navbar-circle-icon" class="fa fa-user-circle"></i>
-                    '. $user['nombre'] .' '.$user['apellidos'] .'
-                </a>';
+                    echo ' <span class="mr-2 d-none d-lg-inline text-gray-600 small">'. $user['nombre'] .' '.$user['apellidos'] .'</span>';
                     
                     }
 

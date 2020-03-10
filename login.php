@@ -6,7 +6,7 @@ $controller = new controller();//declaracion de la clase controlador
 //metodo para verificar si existe la variable de sesion y te arroja a la pagina dependiendo el status
 if (isset($_SESSION['id']) && isset($_SESSION['administrator'])){
   if($_SESSION['administrator'] == 'administrator'){
-    header('location: ./home.php?id='.$_SESSION['id'].'&type='.$_SESSION['administrator']);
+    header('location: ./home-admin.php?id='.$_SESSION['id'].'&type='.$_SESSION['administrator']);
     exit;
   }else{
       header('location: ./home-user.php?id='.$_SESSION['id'].'&type='.$_SESSION['administrator']); 

@@ -178,6 +178,7 @@ $("#updUser").submit(function(event) { //metodo para actualizar al operador
     event.preventDefault();
 })
 
+
 $("#delOperator").submit(function(event) { //metodo para eliminar al operador
     var id = $("#DeleteOperatorId").val();
     $.ajax({
@@ -227,6 +228,46 @@ $("#addUser").submit(function(event) { //metodo para agregar al operador
             $("#AddOperatorLastName").val("");
             $("#AddOperatorUser").val("");
             $("#AddOperatorPassword").val("");
+            $("#cerrar").trigger('click');
+            setTimeout(function() {
+                $("#resultOperator").hide(1500);
+                $("#resultOperator").html("Guardado...");
+                loadUserAdministrator();
+            }, 2000);
+        }
+    });
+    event.preventDefault();
+});
+
+$("#addArmazon").submit(function(event) {
+    var id = $("#id_admin").val();
+    var stock = parseInt($("#insertstock").val());
+    var marca = $("#insertmarca").val();
+    var descripcion = $("#insertdescripcion").val();
+    var precio = $("#insertprecio").val();
+    var imagen = $("#insertImage").val();
+
+    $.ajax({
+        type: 'GET',
+        url: './json/administrator.php',
+        data: {
+            'administrator': 'insertArmazon',
+            'instock': stock,
+            'insmarca': marca,
+            'insdescripcion': descripcion,
+            'insprecio': precio,
+            'insimagen': imagen
+        },
+        beforeSend: function(event) {
+            $("#resultOperator").html("Enviando...");
+            $("#resultOperator").show();
+        },
+        success: function(data) {
+            $("#insertstock").val("");
+            $("#insertmarca").val("");
+            $("#insertdescripcion").val("");
+            $("#insertprecio").val("");
+            $("#insertImage").val("");
             $("#cerrar").trigger('click');
             setTimeout(function() {
                 $("#resultOperator").hide(1500);

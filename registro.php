@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>TMAC - Registro</title>
+    <title>Optica - Registro</title>
     <link rel="stylesheet" href="fonts/bootstrap/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="fonts/css/signup-form.css" type="text/css" />
 

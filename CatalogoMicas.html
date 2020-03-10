@@ -60,7 +60,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="CatalogoArmazon.html">Pedidos</a>
+                        <a class="collapse-item" href="PedidosArmazon.html">Pedidos</a>
                         <a class="collapse-item active" href="cards.html">Catalogo</a>
                     </div>
                 </div>
@@ -68,9 +68,9 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="CatalogoArmazon.html">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Catalogo de armazones</span></a>
+                    <span>Catalogo de Micas</span></a>
             </li>
 
             <!-- Divider -->
@@ -78,9 +78,14 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item active">
-                <a class="nav-link" href="IndexAdministrador.html">
+                <a class="nav-link" href="RegistroDoctor.html">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Registrar doctor</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Doctores.html">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>Doctores</span></a>
             </li>
 
             <!-- Divider -->
@@ -186,24 +191,41 @@
                                 <!-- Collapsable Card Example -->
                                 <div class="col-lg">
                                     <!-- Default Card Example -->
-                                    <div class="card mb-4">
-                                        <img class="card-img-top" src="http://secureservercdn.net/198.71.233.138/ej8.eac.myftpupload.com/wp-content/uploads/2016/10/transitions.jpg"  height="150" width="150">
+                                    <div class="card mb-4" style="width: 18rem;">
+                                        <a href="DescripciónMica.html" role="button">
+                                            <img class="card-img-top" src="http://secureservercdn.net/198.71.233.138/ej8.eac.myftpupload.com/wp-content/uploads/2016/10/transitions.jpg" height="150" width="150">
+                                        </a>
                                         <div class="card-body">
-                                            <h5 class="card-title text-center " >Mica Photocromatica</h5>
+                                            <h5 class="card-title text-center ">Mica Photocromatica</h5>
                                             <div>
                                                 <p>
                                                     Esta Mica es inteligente y se oscurece cuando entra en contacto con el sol y se aclara en interiores, brindándote...
                                                 </p>
                                                 <p class="card-text text-center">$2700</p>
                                             </div>
-                                            <a class="btn btn-primary btn-lg btn-block" href="DescripciónMica.html" role="button" >Ver mas</a>
+                                            <div class="row">
+
+                                                <div class="col-md-6 mb-12" style="text-align: center">
+                                                    <a type="button" data-toggle="modal" data-target="#actualizarArmazon">
+                                                        <i class="fas fa-pen" style="color:yellow"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 mb-12" style="text-align: center">
+                                                    <a type="button" data-toggle="modal" data-target="#EliminarArmazon">
+                                                        <i class="fas fa-trash" style="color:red"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    </div>
+                                </div>
                                 <div class="col-lg">
                                     <!-- Default Card Example -->
-                                    <div class="card mb-4">
-                                        <img class="card-img-top" src="http://secureservercdn.net/198.71.233.138/ej8.eac.myftpupload.com/wp-content/uploads/2017/08/Anti-Blue-Light-Glasses-2-300x252.jpg"  height="150" width="150">
+                                    <div class="card mb-4" style="width: 18rem;">
+                                        <a class="btn btn-primary btn-lg btn-block" href="DescripciónMica.html" role="button">
+                                            <img class="card-img-top" src="http://secureservercdn.net/198.71.233.138/ej8.eac.myftpupload.com/wp-content/uploads/2017/08/Anti-Blue-Light-Glasses-2-300x252.jpg" height="150" width="150">
+                                        </a>
                                         <div class="card-body">
                                             <h5 class="card-title text-center">Mica Anti Blue Ray</h5>
                                             <div>
@@ -211,19 +233,31 @@
                                                     Micas especialmente diseñadas para combatir la dañina luz azul que proviene de celulares, pantallas, tablets, etc....
                                                 </p>
                                                 <p class="card-text text-center">$2700</p>
-                                        </div>
-                                            <a class="btn btn-primary btn-lg btn-block" href="DescripciónMica.html" role="button" >Ver mas</a>
-                                        </div>
-                                        </div>
-                            </div>
-                            </div>
+                                            </div>
+                                            <div class="row">
 
-                            <div class="row">
+                                                <div class="col-md-6 mb-12" style="text-align: center">
+                                                    <a type="button" data-toggle="modal" data-target="#actualizarArmazon">
+                                                        <i class="fas fa-pen" style="color:yellow"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 mb-12" style="text-align: center">
+                                                    <a type="button" data-toggle="modal" data-target="#EliminarArmazon">
+                                                        <i class="fas fa-trash" style="color:red"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- Collapsable Card Example -->
-                                <div class="col-lg">
+                                <div class="col-lg" style="width: 18rem;">
                                     <!-- Default Card Example -->
                                     <div class="card mb-4">
-                                        <img class="card-img-top" src="http://secureservercdn.net/198.71.233.138/ej8.eac.myftpupload.com/wp-content/uploads/2017/08/Policarbonato.png"  height="150" width="150">
+                                        <a class="btn btn-primary btn-lg btn-block" href="DescripciónMica.html" role="button">
+                                            <img class="card-img-top" src="http://secureservercdn.net/198.71.233.138/ej8.eac.myftpupload.com/wp-content/uploads/2017/08/Policarbonato.png" height="150" width="150">
+                                        </a>
                                         <div class="card-body">
                                             <h5 class="card-title text-center">Mica Policarbonato</h5>
                                             <div>
@@ -231,15 +265,30 @@
                                                     Micas diseñadas para ser mas resistentes que las micas normales, especial para lentes de 3 piezas...
                                                 </p>
                                                 <p class="card-text text-center">$2700</p>
-                                        </div>
-                                            <a class="btn btn-primary btn-lg btn-block" href="DescripciónMica.html" role="button" >Ver mas</a>
+                                                <div class="row">
+
+                                                    <div class="col-md-6 mb-12" style="text-align: center">
+                                                        <a type="button" data-toggle="modal" data-target="#actualizarArmazon">
+                                                            <i class="fas fa-pen" style="color:yellow"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-12" style="text-align: center">
+                                                        <a type="button" data-toggle="modal" data-target="#EliminarArmazon">
+                                                            <i class="fas fa-trash" style="color:red"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg">
                                     <!-- Default Card Example -->
-                                    <div class="card mb-4">
-                                        <img class="card-img-top" src="http://secureservercdn.net/198.71.233.138/ej8.eac.myftpupload.com/wp-content/uploads/2017/08/how-bifocals-work-419x250.jpg"  height="150" width="150">
+                                    <div class="card mb-4" style="width: 18rem;">
+                                        <a class="btn btn-primary btn-lg btn-block" href="DescripciónMica.html" role="button">
+                                            <img class="card-img-top" src="http://secureservercdn.net/198.71.233.138/ej8.eac.myftpupload.com/wp-content/uploads/2017/08/how-bifocals-work-419x250.jpg" height="150" width="150">
+                                        </a>
                                         <div class="card-body">
                                             <h5 class="card-title text-center">Mica Flap Top</h5>
                                             <div>
@@ -247,55 +296,134 @@
                                                     Mica diseñada para la comodidad de las personas que requieren corregir su visión tanto de lejos como de cerca...
                                                 </p>
                                                 <p class="card-text text-center">$2700</p>
-                                        </div>
-                                            <a class="btn btn-primary btn-lg btn-block" href="DescripciónMica.html" role="button" >Ver mas</a>
+                                                <div class="row">
+
+                                                    <div class="col-md-6 mb-12" style="text-align: center">
+                                                        <a type="button" data-toggle="modal" data-target="#actualizarArmazon">
+                                                            <i class="fas fa-pen" style="color:yellow"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-12" style="text-align: center">
+                                                        <a type="button" data-toggle="modal" data-target="#EliminarArmazon">
+                                                            <i class="fas fa-trash" style="color:red"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- /.container-fluid -->
-                    <a class="scroll-to-top rounded" href="#page-top">
-                        <i class="fas fa-angle-up"></i>
-                    </a>
 
-                    <!-- Logout Modal-->
-                    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                </div>
+                <!-- /.container-fluid -->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
-                                </div>
-                                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                    <a class="btn btn-primary" href="login.html">Logout</a>
-                                </div>
+                            </div>
+                            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <a class="btn btn-primary" href="login.html">Logout</a>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="modal fade" id="actualizarArmazon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Actualizar</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="card-header py-3">
+                                    <div class="form-row ">
+                                        <div class="col-md-10 mb-3">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Tipo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-10 mb-3">
+                                            <label for="validationTextarea">Descripcion</label>
+                                            <textarea class="form-control form-control-user" id="validationTextarea" placeholder="" required></textarea>
+                                            <div class="invalid-feedback">
+                                                Descripcion.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="form-group">
+                                                <input type="number" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Precio">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="EliminarArmazon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body">
+                                    ¿Estas seguro de eliminar este mica?
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Bootstrap core JavaScript-->
-                    <script src="vendor/jquery/jquery.min.js"></script>
-                    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <!-- Bootstrap core JavaScript-->
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                    <!-- Core plugin JavaScript-->
-                    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <!-- Core plugin JavaScript-->
+                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-                    <!-- Custom scripts for all pages-->
-                    <script src="js/sb-admin-2.min.js"></script>
+                <!-- Custom scripts for all pages-->
+                <script src="js/sb-admin-2.min.js"></script>
 
-                    <!-- Page level plugins -->
-                    <script src="vendor/chart.js/Chart.min.js"></script>
+                <!-- Page level plugins -->
+                <script src="vendor/chart.js/Chart.min.js"></script>
 
-                    <!-- Page level custom scripts -->
-                    <script src="js/demo/chart-area-demo.js"></script>
-                    <script src="js/demo/chart-pie-demo.js"></script>
+                <!-- Page level custom scripts -->
+                <script src="js/demo/chart-area-demo.js"></script>
+                <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 

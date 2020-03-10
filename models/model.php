@@ -90,7 +90,27 @@
 
             echo json_encode($userDataAdministrator);
         }
+        public function prepareQueryUpdateUser($id_user,$name,$lastname,$user,$password){ //metodo que prepara la modificacion del usuario
+            //en la base de datos
+            if($this->connection == null){
+                $this->openConnection();
+        
+                    $judgment = $this->connection->prepare("CALL modUsuario(:name,:lastname,:user,:password,:id_user)");
+                    $judgment->bindParam(':id_user',$id_user,PDO::PARAM_INT);
+                    $judgment->bindParam(':name',$name,PDO::PARAM_STR);
+                    $judgment->bindParam(':lastname',$lastname,PDO::PARAM_STR);
+                    $judgment->bindParam(':password',$password,PDO::PARAM_STR);
+                    $judgment->bindParam(':user',$user,PDO::PARAM_STR);
+                  
 
+                $this->closeConnection();
+
+            }else{
+                $judment = "not execute method prepareQueryLoginStatusUpdate";
+            }
+
+            return $judgment->execute();
+        }
 
         public function prepareQueryLogin($user,$password){ //prepara el login del administrador o usuario
             if($this->connection == null){
@@ -178,8 +198,9 @@
         public function prepareQueryDeleteOperator($id_user){ //metodo que da de baja temporal al usuario en la base de datos.
             if($this->connection == null){
                 $this->openConnection();
-                $judgment = $this->connection->prepare("CALL delOperador(:id_user)");
+                $judgment = $this->connection->prepare("CALL delOperador(:id_user,:id_admin)");
                 $judgment->bindParam(':id_user',$id_user,PDO::PARAM_INT);
+                $judgment->bindParam(':id_admin',$id_administrator,PDO::PARAM_INT);
                 $this->closeConnection();
             }else{
                 $judment = "not execute method prepareQueryDeleteOperator";
@@ -207,6 +228,26 @@
             return $judgment->execute(); 
         }
 
+        public function prepareQuyeryInsertArmazon($stock, $marca, $descripcion, $precio_armazon, $imagen, $id_usuario){
+            if($this->connection == null){
+                $this->openConnection();
+                $judgment = $this->connection->prepare("CALL InsertArmazon(:stock,:marca,:descripcion,:precio_armazon,:imagen,:id_usuario)");
+                
+                $judgment->bindParam(':stock', $stock, PDO::PARAM_INT);
+                $judgment->bindParam(':marca', $marca, PDO::PARAM_STR);
+                $judgment->bindParam(':descripcion',$descripcion, PDO::PARAM_STR);
+                $judgment->bindParam(':precio_armazon',$precio_armazon, PDO::PARAM_STR);
+                $judgment->bindParam(':imagen',$imagen,PDO::PARAM_STR);
+                $judgment->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
+            }else{
+                $judment = "not execute method prepareQuyeryInsertArmazon";
+            }
+            return $judgment->execute(); 
+        }
+
+
+
+
         public function prepareQueryInsertUser($name,$lastname,$username,$password){ //metodo para insertar al administrador que esta ligada con el registro
             //de usuarios
              if($this->connection == null){
@@ -229,22 +270,7 @@
 
         }
 
-        public function prepareQueryUpdateUser($id_user,$name,$lastname,$user,$password){ //metodo que prepara la modificacion del usuario
-            //en la base de datos
-            if($this->connection == null){
-                $this->openConnection();
-                    $judgment = $this->connection->prepare("CALL modUsuario(:name,:lastname,:user,:password,:id_user)");
-                    $judgment->bindParam(':id_user',$id_user,PDO::PARAM_INT);
-                    $judgment->bindParam(':name',$name,PDO::PARAM_STR);
-                    $judgment->bindParam(':lastname',$lastname,PDO::PARAM_STR);
-                    $judgment->bindParam(':password',$password,PDO::PARAM_STR);
-                    $judgment->bindParam(':user',$user,PDO::PARAM_STR);
-                $this->closeConnection();
-            }else{
-                $judment = "not execute method prepareQueryLoginStatusUpdate";
-            }
-            return $judgment->execute();
-        }
+        
 
         public function redirect($url){
             header("Location: ".$url);

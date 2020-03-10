@@ -31,11 +31,23 @@
        $id_administrator = $_GET['id_administrator'];
        $model->prepareUserJSON($id_administrator);
     }
+    
+    if($administrator == 'insertArmazon'){
+        $stock = $_GET['insertstock'];
+        $marca = $_GET['insertmarca'];
+        $descripcion = $_GET['insertdescipcion'];
+        $precio = $_GET['insertprecio'];
+        $imagen = $_GET['insertImage'];
+        $id_administrator = $_GET['id_admin'];
+
+        $model->prepareQuyeryInsertArmazon($stock, $marca, $descripcion, $precio_armazon, $imagen, $id_administrator);
+    }
 
 
     if($administrator == 'deleteOperator'){ //elimina al operador que ha registrado el administrador
         $id_user = $_GET['id_user'];
-        $model->prepareQueryDeleteOperator($id_user);
+        $id_administrator = $_GET['id_administrator'];
+        $model->prepareQueryDeleteOperator($id_user, $id_administrator);
     }
 
     if($administrator == 'readCampaings'){ //obtiene las campañas que ha registrado el administrador
